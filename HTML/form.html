@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px 30px;
+            font-size: 17px;
+            padding: 0px;
+            text-align: left;
+        }
+        .container{
+            background-image: url(https://images.unsplash.com/photo-1520038410233-7141be7e6f97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80);
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 1% 10%;
+            border-radius: 4px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type = "number"],
+        select, textarea{
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0.4%;
+            padding-left: 10px;
+            background-color: rgba(255, 255, 255, 0.695);
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+        }
+        input[type = "radio"] p
+        {
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 5px;
+        }
+        select[name="countryCode"]{
+            width: 150px;
+        }
+        input[type="number"]{
+            width: 140px;
+        }
+        .heading{
+            text-align: center;
+            color: rgb(228, 175, 0);
+        }
+        input[type="submit"]{
+            background-color: rgb(228, 175, 0);
+            border: none;
+            border-radius: 4px;
+            padding: 7px 20px;
+            cursor: pointer;
+            width: 170px;
+        }
+        footer{
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        footer a{
+            text-decoration: none;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: rgb(62, 62, 62);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="register.html">
+            <header>
+                <h1 class="heading">Registration Form</h1>
+            </header>
+            <p><input type="text" name="name" placeholder="name" required></p>
+            <p><input type="email" name="email" placeholder="email" required></p>
+            <p>
+                <input type="radio" id="gender" name="gender" value="Male"> Male
+                <input type="radio" id="gender" name="gender" value="Female">Female
+
+            </p>
+            <p>
+                <select name="countryCode" id="countryCode" required>
+                    <option value="">--Country Code--</option>
+                    <option value="">+91(India)</option>
+                    <option value="">+91(India)</option>
+                    <option value="">+91(India)</option>
+                    <option value="">+91(India)</option>
+                    <option value="">+91(India)</option>
+                    <option value="">+91(India)</option>
+                    <option value="">+91(India)</option>
+                    <option value="">+91(India)</option>
+                </select>
+                <input type="Number" name="Phone number" id="phoneNumber" placeholder="phone number" required>
+            </p>
+            <p>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type in your message..." maxlength="100"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="submit" id="submit">
+            </p>
+            <footer>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Copyright Info</a>
+                <a href="#">Contact Us</a>
+                <a href="#">&copy; 2022 | Saloni Dwivedi</a>
+    
+            </footer>
+        </form>
+    </div>
+</body>
+</html>
